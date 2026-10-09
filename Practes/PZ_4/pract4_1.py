@@ -15,8 +15,6 @@ def error_handler(work_permit): # обработчик базовых ошибо
 
 a = error_handler("Введите число А: ")
 b = error_handler("Введите число B: ")
-n=0
 for i in range(a,b+1):
     print(f"{i}")
-    n+=1
-print(f"N чисел включая А и В: {n}\nНе включая A и B: {n-2}")
+print(f"N чисел включая А и В: {b-a+1}\nНе включая A и B: {b-a-1}")

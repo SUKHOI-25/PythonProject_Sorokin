@@ -12,4 +12,12 @@ def error_handler(work_permit): # обработчик базовых ошибо
             print("Для выхода нажмите CTRL+C\nCTRL+D для линукс и CTRL+Z на виндовс не прерывают цикл")
 
 n = error_handler("Введите число N: ")
-print("TRUE") if n>0 and 1162261467%n==0 else print("FALSE")
+# print("TRUE") if n>0 and 1162261467%n==0 else print("FALSE")
+flag=True
+if n>0:
+    while n%3==0:
+        n//=3
+    flag=(n==1)
+else:
+    flag=False
+print("TRUE") if flag else print("FALSE")
