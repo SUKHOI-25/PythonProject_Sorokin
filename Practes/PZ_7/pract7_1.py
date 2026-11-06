@@ -19,7 +19,7 @@ print(f"Строка длинной {lenstr} : {thestr}")
 
 
 while True:
-    n = error_handler("Введите число >0: ")
+    n = error_handler("Введите число >0 : ")
     if n>0:
         break
     else:
@@ -30,6 +30,6 @@ while True:
 if lenstr>n:
     print(thestr[n:])
 elif lenstr<n:
-    print("."*(n-lenstr),thestr)
+    print(f"{"."*(n-lenstr)}{thestr}")
 else:
     print(thestr)
