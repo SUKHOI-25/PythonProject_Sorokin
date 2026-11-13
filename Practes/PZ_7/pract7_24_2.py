@@ -1,0 +1,5 @@
+S = input()
+S1 = input()
+S2 = input()
+print(S,"\n",S1,"\n",S2)
+print(S.replace(S1,S2))
